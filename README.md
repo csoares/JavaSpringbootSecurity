@@ -39,7 +39,7 @@ src/main/java/com/example/springsecurityjwt/
 - Spring Boot 3.x
 - Spring Security
 - Spring Data JPA
-- MySQL
+- PostgreSQL
 - Maven
 - JWT (JSON Web Token)
 - Lombok
@@ -49,15 +49,17 @@ src/main/java/com/example/springsecurityjwt/
 ### Prerequisites
 - Java 17 or higher
 - Maven
-- MySQL
+- PostgreSQL
 
 ### Database Configuration
-1. Create a MySQL database
+1. Create a PostgreSQL database
 2. Update `application.properties` with your database credentials:
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+spring.datasource.url=jdbc:postgresql://localhost:5432/your_database
 spring.datasource.username=your_username
 spring.datasource.password=your_password
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
 ```
 
 ### Running the Application

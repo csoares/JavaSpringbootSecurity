@@ -94,4 +94,11 @@ Thumbs.db
 ### Temporary Files ###
 *.swp
 *.swo
-*~ 
+*~
+
+### PostgreSQL ###
+*.sql
+*.dump
+pgdata/
+postgres-data/
+postgresql-data/ 
